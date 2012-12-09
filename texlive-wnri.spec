@@ -127,3 +127,16 @@ Native American languages.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110506-2
++ Revision: 757542
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110506-1
++ Revision: 719910
+- texlive-wnri
+- texlive-wnri
+- texlive-wnri
+
