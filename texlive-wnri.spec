@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-wnri
 Version:	20110506
-Release:	9
+Release:	10
 Summary:	Ridgeway's fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/wnri
