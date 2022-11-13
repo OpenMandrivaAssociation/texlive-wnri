@@ -1,18 +1,12 @@
-# revision 22459
-# category Package
-# catalog-ctan /fonts/wnri
-# catalog-date 2011-05-06 00:38:04 +0200
-# catalog-license gpl
-# catalog-version undef
 Name:		texlive-wnri
-Version:	20190228
+Version:	22459
 Release:	1
 Summary:	Ridgeway's fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/wnri
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/wnri.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/wnri.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/wnri.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/wnri.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ Roman transliteration and Puget Salish (Lushootseed) and other
 Native American languages.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -120,23 +114,10 @@ Native American languages.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110506-2
-+ Revision: 757542
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110506-1
-+ Revision: 719910
-- texlive-wnri
-- texlive-wnri
-- texlive-wnri
-
