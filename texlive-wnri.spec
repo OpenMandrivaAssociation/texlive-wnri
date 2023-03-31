@@ -1,6 +1,6 @@
 Name:		texlive-wnri
 Version:	22459
-Release:	1
+Release:	2
 Summary:	Ridgeway's fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/wnri
