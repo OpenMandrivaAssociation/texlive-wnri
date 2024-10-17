@@ -3,7 +3,7 @@ Version:	22459
 Release:	2
 Summary:	Ridgeway's fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/wnri
+URL:		https://www.ctan.org/tex-archive/fonts/wnri
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/wnri.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/wnri.doc.r%{version}.tar.xz
